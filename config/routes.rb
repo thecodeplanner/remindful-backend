@@ -24,6 +24,7 @@ Rails.application.routes.draw do
 
   # selcare routes
   get "/selfcares" => "selfcares#index"
+  post "/selfcares" => "selfcares#create"
 
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
