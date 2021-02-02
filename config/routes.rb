@@ -18,8 +18,13 @@ Rails.application.routes.draw do
   patch "/days/:id" => "days#update"
   delete "/days/:id" => "days#destroy"
 
-# all other routes 
-  resources :selfcares
-  resources :tasks
+  # task routes
+  get "/tasks" => "tasks#index"
+  post "/tasks" => "tasks#create"
+
+  # selcare routes
+  get "/selfcares" => "selfcares#index"
+
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
