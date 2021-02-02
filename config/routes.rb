@@ -1,7 +1,15 @@
 Rails.application.routes.draw do
   # login route
+  post "/login" => "auth#login"
 
   # sign up route
+  post "/signup" => "auth#signup"
+
+
+  # user routes
+  get "/users" => "users#index"
+  get "/users/:id" => "users#show"
+
 
   # days routes 
   get "/days" => "days#index"
@@ -13,6 +21,5 @@ Rails.application.routes.draw do
 # all other routes 
   resources :selfcares
   resources :tasks
-  resources :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
