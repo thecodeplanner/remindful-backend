@@ -40,7 +40,7 @@ class DaysController < ApplicationController
     private
 
     def day_params
-        params.permit(:entry, :mood, :water_intake, :user_id)
+        params.permit(:date, :entry, :mood, :water_intake, :user_id)
     end
 
 
