@@ -20,11 +20,15 @@ Rails.application.routes.draw do
 
   # task routes
   get "/tasks" => "tasks#index"
+  get "/tasks/:id" => "tasks#show"
   post "/tasks" => "tasks#create"
+  patch "/tasks/:id" => "tasks#update"
 
   # selcare routes
   get "/selfcares" => "selfcares#index"
+  get "/selfcares/:id" => "selfcares#show"
   post "/selfcares" => "selfcares#create"
+  patch "/selfcares/:id" => "selfcares#update"
 
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

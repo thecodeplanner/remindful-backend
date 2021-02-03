@@ -14,6 +14,22 @@ class TasksController < ApplicationController
         end
     end
 
+    def show
+        @task = Task.find_by(id: params[:id])
+        if @task
+            render json: @task
+        else
+            render json: {error: 'Task not found'}
+        end
+    end
+
+    def update
+        @task = Task.find(params[:id])
+        @task.update(task_params)
+        render json: @task 
+    end
+
+
     private
 
     def task_params

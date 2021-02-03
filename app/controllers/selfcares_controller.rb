@@ -13,6 +13,21 @@ class SelfcaresController < ApplicationController
         end
     end
 
+    def show
+        @selfcare = Selfcare.find_by(id: params[:id])
+        if @selfcare
+            render json: @selfcare
+        else
+            render json: {error: 'Selfcare not found'}
+        end
+    end
+
+    def update
+        @selfcare = Selfcare.find(params[:id])
+        @selfcare.update(selfcare_params)
+        render json: @selfcare
+    end
+
     private
 
     def selfcare_params
