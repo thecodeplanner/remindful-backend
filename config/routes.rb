@@ -23,12 +23,14 @@ Rails.application.routes.draw do
   get "/tasks/:id" => "tasks#show"
   post "/tasks" => "tasks#create"
   patch "/tasks/:id" => "tasks#update"
+  delete "/tasks/:id" => "tasks#destroy"
 
   # selcare routes
   get "/selfcares" => "selfcares#index"
   get "/selfcares/:id" => "selfcares#show"
   post "/selfcares" => "selfcares#create"
   patch "/selfcares/:id" => "selfcares#update"
+  delete "/selfcares/:id" => "selfcares#destroy"
 
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

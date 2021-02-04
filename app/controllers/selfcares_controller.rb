@@ -28,6 +28,12 @@ class SelfcaresController < ApplicationController
         render json: @selfcare
     end
 
+    def destroy
+        @selfcare = Selfcare.find(params[:id])
+        @selfcare.destroy
+        render json: @selfcare
+    end
+
     private
 
     def selfcare_params
