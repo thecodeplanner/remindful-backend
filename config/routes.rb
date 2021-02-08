@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   # user routes
   get "/users" => "users#index"
   get "/users/:id" => "users#show"
+  patch "/users/:id" => "users#update"
 
 
   # days routes 
