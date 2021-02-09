@@ -5,12 +5,10 @@ Rails.application.routes.draw do
   # sign up route
   post "/signup" => "auth#signup"
 
-
   # user routes
   get "/users" => "users#index"
   get "/users/:id" => "users#show"
   patch "/users/:id" => "users#update"
-
 
   # days routes 
   get "/days" => "days#index"
@@ -26,7 +24,7 @@ Rails.application.routes.draw do
   patch "/tasks/:id" => "tasks#update"
   delete "/tasks/:id" => "tasks#destroy"
 
-  # selcare routes
+  # selfcare routes
   get "/selfcares" => "selfcares#index"
   get "/selfcares/:id" => "selfcares#show"
   post "/selfcares" => "selfcares#create"
