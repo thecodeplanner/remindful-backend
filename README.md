@@ -1,24 +1,13 @@
-# README
+# Remindful
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Remindful is a self-care journaling app made for users to keep track of their daily tasks as well as be mindful of their thoughts and feelings each day.
 
-Things you may want to cover:
+This was built with a React [frontend](https://github.com/thecodeplanner/remindful-frontend) and Ruby on Rails for the backend.
 
-* Ruby version
 
-* System dependencies
+## Bundle Install
 
-* Configuration
+Run bundle install and 'rails s' in terminal to start up server.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Creator
+[Melissa Mach](https://github.com/thecodeplanner)
